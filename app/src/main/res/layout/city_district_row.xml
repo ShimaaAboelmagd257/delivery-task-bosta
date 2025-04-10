@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!-- District Spinner -->
+
     <TextView
         android:id="@+id/cityNameTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="361dp"
+        android:layout_height="40dp"
         android:paddingBottom="8dp"
         android:text="City Name"
         android:textColor="#000000"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/districtSpinner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="26dp" />
+
     <ImageView
         android:id="@+id/arrowImageView"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="Toggle"
         android:src="@drawable/ic_arrow_drop_down"
-        android:contentDescription="Toggle"/>
+        app:layout_constraintBottom_toTopOf="@+id/districtSpinner"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <Spinner
         android:id="@+id/districtSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp" />
+        android:layout_width="362dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cityNameTextView"
+        tools:layout_editor_absoluteY="141dp" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

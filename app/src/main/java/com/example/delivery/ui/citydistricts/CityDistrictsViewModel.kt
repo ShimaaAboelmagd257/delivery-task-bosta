@@ -1,4 +1,4 @@
-package com.example.delivery.ui.theme.citydistricts
+package com.example.delivery.ui.citydistricts
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -13,7 +13,9 @@ import javax.inject.Inject
 @HiltViewModel
 class CityDistrictsViewModel @Inject constructor(private val cityDistrictsUseCase: CityDistrictsUseCase):ViewModel() {
 
-    private val _state = MutableStateFlow<CityDistrictsStates<List<CityDistricts>>>(CityDistrictsStates.Loading)
+    private val _state = MutableStateFlow<CityDistrictsStates<List<CityDistricts>>>(
+        CityDistrictsStates.Loading
+    )
     val state: StateFlow<CityDistrictsStates<List<CityDistricts>>> = _state
     init {
         fetchCityDistricts()
@@ -25,7 +27,7 @@ class CityDistrictsViewModel @Inject constructor(private val cityDistrictsUseCas
                 val response = cityDistrictsUseCase.invoke()
                 _state.value = response
             }catch (e:Exception){
-                _state.value = CityDistrictsStates.Error(e.message?:"Error")
+                _state.value = CityDistrictsStates.Error(e.message ?: "Error")
             }
         }
     }

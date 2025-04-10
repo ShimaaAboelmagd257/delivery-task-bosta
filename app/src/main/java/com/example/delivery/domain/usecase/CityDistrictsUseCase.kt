@@ -2,13 +2,13 @@ package com.example.delivery.domain.usecase
 
 import com.example.delivery.data.model.CityDistricts
 import com.example.delivery.data.repository.Repository
-import com.example.delivery.ui.theme.citydistricts.CityDistrictsStates
+import com.example.delivery.ui.citydistricts.CityDistrictsStates
 import com.example.delivery.util.AppLogger
 import javax.inject.Inject
 
 class CityDistrictsUseCase @Inject constructor(private val repository: Repository) {
 
-    suspend operator fun invoke():CityDistrictsStates<List<CityDistricts>>{
+    suspend operator fun invoke(): CityDistrictsStates<List<CityDistricts>> {
         return try {
             val response =   repository.getAllCitiesDistricts()
             if (response.success && response.data.isNotEmpty()){

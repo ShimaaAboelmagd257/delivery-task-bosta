@@ -1,4 +1,4 @@
-package com.example.delivery.ui.theme.citydistricts
+package com.example.delivery.ui.citydistricts
 
 import android.R
 import android.annotation.SuppressLint
@@ -15,7 +15,9 @@ import com.example.delivery.databinding.CityDistrictRowBinding
 import com.example.delivery.util.AppLogger
 import java.util.logging.Logger
 
-class CityDistrictsAdapter(private  val onItemClicked:(CityDistricts) ->Unit): ListAdapter<CityDistricts,CityDistrictsAdapter.MyViewHolder>(CityDiffUtil) {
+class CityDistrictsAdapter(private  val onItemClicked:(CityDistricts) ->Unit): ListAdapter<CityDistricts, CityDistrictsAdapter.MyViewHolder>(
+    CityDiffUtil
+) {
 
 
      class MyViewHolder(private val binding: CityDistrictRowBinding): RecyclerView.ViewHolder(binding.root) {

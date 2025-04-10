@@ -1,4 +1,8 @@
 package com.example.delivery.data.repository
 
-class Repository {
+import com.example.delivery.data.model.CityDistrictsResponse
+
+interface Repository {
+
+    suspend fun getAllCitiesDistricts(): CityDistrictsResponse
 }

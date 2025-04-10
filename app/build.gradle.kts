@@ -2,9 +2,10 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
     id("kotlin-kapt")
     id("kotlin-parcelize")
-
+    id ("dagger.hilt.android.plugin")
 }
 
 android {
@@ -30,6 +31,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -39,6 +41,8 @@ android {
     }
     buildFeatures {
         compose = true
+        dataBinding = true
+        viewBinding = true
     }
 }
 
@@ -60,13 +64,17 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    // ConstraintLayout
+    implementation (libs.androidx.constraintlayout)
+
     //Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation (libs.retrofit2.kotlin.coroutines.adapter)
 
     //Hilt
-    implementation(libs.hilt.android)
+    implementation (libs.hilt.android.v244)
+    implementation(libs.androidx.hilt.navigation.compose)
     kapt(libs.dagger.hilt.android.compiler)
 
     // Coroutines

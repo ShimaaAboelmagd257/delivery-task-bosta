@@ -4,14 +4,14 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class CityWithDistrictsResponse(
+data class CityDistrictsResponse(
     val success: Boolean,
     val message: String,
-    val data: List<CityWithDistricts>
+    val data: List<CityDistricts>
 ):Parcelable
 
 @Parcelize
-data class CityWithDistricts(
+data class CityDistricts(
     val cityId: String,
     val cityName: String,
     val cityOtherName: String,

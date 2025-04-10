@@ -1,7 +1,6 @@
 package com.example.delivery.data.api
 
-import android.util.Log
-import com.example.delivery.utl.Constants
+import com.example.delivery.util.Constants
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,8 +1,8 @@
 package com.example.delivery.data.api
 
-import com.example.delivery.data.model.CityWithDistrictsResponse
+import com.example.delivery.data.model.CityDistrictsResponse
 
 interface RemoteSource {
 
-    suspend fun getAllCitesWithDistricts(): CityWithDistrictsResponse
+    suspend fun getAllCitesDistricts(): CityDistrictsResponse
 }

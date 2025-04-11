@@ -72,7 +72,7 @@ import com.example.delivery.data.model.District
 
             Column(modifier = Modifier.fillMaxSize().padding(top = 30.dp)) {
 
-                Text("Choose The pickup area", modifier = Modifier.padding(start= 30.dp), fontWeight = FontWeight.Bold, fontSize = 20.sp)
+                Text("Choose the pickup area", modifier = Modifier.padding(start= 16.dp), fontWeight = FontWeight.Bold, fontSize = 20.sp)
 
                SearchBar(query = searchQuery, onQueryChanged = { searchQuery = it })
 
@@ -116,7 +116,8 @@ fun SearchBar(
         singleLine = true,
         shape = RectangleShape,
         colors = TextFieldDefaults.textFieldColors(
-            containerColor = Color.White   ),
+            containerColor = Color.White,
+            focusedIndicatorColor = Color.Transparent),
 
         modifier = Modifier
             .fillMaxWidth()

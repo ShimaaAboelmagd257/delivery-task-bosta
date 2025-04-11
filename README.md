@@ -94,8 +94,6 @@ To run the Food Planner Java project locally, follow these steps:
 ---
 
 ## 📸 Screenshots
-![Delivery Screen]
+![Delivery Screen](https://github.com/user-attachments/assets/2ac8fa97-2acc-4c32-bbc6-779bf0a8e78b)
 
-![Image](https://github.com/user-attachments/assets/2ac8fa97-2acc-4c32-bbc6-779bf0a8e78b)
-
-![Image](https://github.com/user-attachments/assets/d72be70d-6a6c-4bd2-9241-1bae8a6ec16b)
+![DropDown](https://github.com/user-attachments/assets/d72be70d-6a6c-4bd2-9241-1bae8a6ec16b)

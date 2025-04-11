@@ -91,4 +91,8 @@ To run the Food Planner Java project locally, follow these steps:
 1. Clone this repository.
 2. Open the project in Android Studio.
 3. Build and run the app on an emulator or physical device.
+---
 
+## 📸 Screenshots
+![Delivery Screen] https://github.com/ShimaaAboelmagd257/delivery-task-bosta/issues/2#issue-2989635090
+https://github.com/ShimaaAboelmagd257/delivery-task-bosta/issues/1#issue-2989632842

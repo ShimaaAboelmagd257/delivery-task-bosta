@@ -29,6 +29,7 @@ This project demonstrates integration with Bosta's Delivery API to fetch and dis
 ## 📁 Project Structure
 📂 app
 ┣ 📂 data
+┃
 ┃ ┣ 📂 model # Data models (City, District, etc.)
 ┃ ┣ 📂 remote # Retrofit API interface
 ┃ ┗ 📂 repository # Manages data flow from API

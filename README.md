@@ -29,16 +29,15 @@ This project demonstrates integration with Bosta's Delivery API to fetch and dis
 ## 📁 Project Structure
 📂 app
 ┣ 📂 data
-┃
-┃ ┣ 📂 model # Data models (City, District, etc.)
-┃ ┣ 📂 remote # Retrofit API interface
-┃ ┗ 📂 repository # Manages data flow from API
+┃ ┣ 📂 model 
+┃ ┣ 📂 remote 
+┃ ┗ 📂 repository 
 ┣ 📂 domain
-┃ ┗ 📂 usecase # Business logic layer
+┃ ┗ 📂 usecase
 ┣ 📂 presentation
-┃ ┣ 📂 ui # Jetpack Compose UI components
-┃ ┗ 📂 viewmodel # Handles state and logic
-┣ 📂 di # Hilt modules for dependency injection
+┃ ┣ 📂 ui
+┃ ┗ 📂 viewmodel 
+┣ 📂 di 
 ┗ 📜 MainActivity.kt
 
 ## 🚧 Implementation Steps 
